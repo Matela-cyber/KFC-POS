@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.toph {
+  display: flex;
+  justify-content: space-between;
+}
+img {
+  margin-right: 16rem;
+  padding: 1rem 0 0 3rem;
+  width: 3.85rem;
+  height: 4rem;
+}
+.toph .deco p {
+  display: inline-block;
+  background-color: red;
+  width: 2rem;
+  height: 1rem;
+  margin: 0 0.8rem;
+}
+.assist {
+  margin: 1rem 2rem 0;
+  display: flex;
+}
+.manager {
+  display: inline-block;
+  background-color: red;
+  padding: 0.3rem 0.9rem 0.5rem;
+  font-weight: bold;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  border-radius: 0.3rem;
+}
+.utility {
+  margin-top: 0.9rem;
+}
+.utility p {
+  background-color: #333;
+  border-radius: 0.2rem;
+  height: 0.3rem;
+  width: 1.8rem;
+  margin: 0.45rem 0.6rem;
+}
+.lowh {
+  background-color: #ff0000;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+}
+.toph label {
+  margin: 2rem 1rem 0 0;
+  font-weight: bold;
+  font-size: large;
+}
+.lowh label {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+input {
+  font-size: 1rem;
+}
+
+.oders-list {
+  background-color: #33333350;
+  padding: 0 1rem;
+  color: white;
+  width: 20vw;
+}
+
+.menu article {
+  box-shadow: #030303;
+  background-color: #33333311;
+  padding: 0.1rem;
+  margin: 0 0.4rem 0.8rem 0.4rem;
+  width: 15rem;
+}
+
+.menu-item button {
+  font-size: larger;
+  font-weight: bolder;
+  border: 0;
+  padding: 0.1rem 1rem;
+  background-color: red;
+  color: white;
+}
+.menu-items {
+  display: flex;
+}
+/* Add styles for the order table */
+.orders-list {
+  text-align: center;
+}
+
+.order-table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.order-row {
+  display: table-row;
+}
+
+.order-cell {
+  display: table-cell;
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu {
+  width: 80vw;
+}
+.order-row.header {
+  background-color: #ff0000;
+  color: white;
+}
+.menu-item {
+  display: flex;
+  padding: 1rem;
+}
+.menu-item img {
+  margin-right: 1rem;
+}
+.order-cell {
+  width: 5rem;
+}
+.menu h2 {
+  margin-left: 21rem;
+}
+.menu img {
+  height: 4rem;
+  width: 4rem;
+  padding-left: 1rem;
+}
+.next {
+  width: 4rem;
+  height: 1.5rem;
+  font-size: large;
+}

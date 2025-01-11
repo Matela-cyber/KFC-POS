@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="toph">
+        <img src="images/logo.png" alt="kfc-logo" />
+        <div class="deco">
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="assist">
+          <label for="assist">Assist Me:</label>
+          <p class="manager">MANAGER</p>
+          <div class="utility">
+            <p></p>
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="lowh">
+        <label for="customer-name">Customer Name:</label>
+        <input
+          type="text"
+          id="customer-name"
+          placeholder="Enter customer name"
+        />
+        <button class="next" onclick="removeName()">next</button>
+        <button class="next" onclick="removeLastRow()">Undo</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="menu">
+        <h2>Menu</h2>
+        <div class="menu-items">
+          <article
+            class="menu-item"
+            data-name="Makoenya"
+            data-preparation-time="5"
+          >
+            <img src="images/allinone.jpg" alt="all in one" />
+            <div>
+              <h3>All in One</h3>
+              <button onclick="addItem('all in one', 10)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/boxmaster.jpg" alt="Box Master" />
+            <div>
+              <h3>Box Master</h3>
+              <button onclick="addItem('Box Master', 15)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/wwister-Hawaiian-1024x1024.jpg" alt="wwister" />
+            <div>
+              <h3>Wister-H</h3>
+              <button onclick="addItem('wwister-Hawaiian', 15)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/gravy.jpg" alt="gravy" />
+            <div>
+              <h3>Gravy</h3>
+              <button onclick="addItem('Gravy', 5)">Add</button>
+            </div>
+          </article>
+        </div>
+        <div class="menu-items">
+          <article class="menu-item">
+            <img src="images/1L Coke.jpg" alt="1L COKE" />
+            <div>
+              <h3>1L coke</h3>
+              <button onclick="addItem('1L COKE', 1)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/2L coke.jpg" alt="2L coke" />
+            <div>
+              <h3>2L coke</h3>
+              <button onclick="addItem('2L coke', 1.50)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/300ml.jpg" alt="300ml coke" />
+            <div>
+              <h3>300ML Coke</h3>
+              <button onclick="addItem('300ml coke', 1.50)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/Krusher.jpg" alt="Krusher" />
+            <div>
+              <h3>Krusher</h3>
+              <button onclick="addItem('Krusher', 4)">Add</button>
+            </div>
+          </article>
+        </div>
+        <div class="menu-items">
+          <article class="menu-item">
+            <img src="images/dunked.jpg" alt="Dunked" />
+            <div>
+              <h3>dunked</h3>
+              <button onclick="addItem('Dunked', 10)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/mixed bery.jpg" alt="Mixed Bery" />
+            <div>
+              <h3>Mixed Bery</h3>
+              <button onclick="addItem('Mixed Bery', 12)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/9 piece.jpg" alt="9 piece" />
+            <div>
+              <h3>9 Piece</h3>
+              <button onclick="addItem('9 piece', 20)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/snack box.jpg" alt="Snack Box" />
+            <div>
+              <h3>Snack Box</h3>
+              <button onclick="addItem('Snack Box', 20)">Add</button>
+            </div>
+          </article>
+        </div>
+        <div class="menu-items">
+          <article class="menu-item">
+            <img src="images/21 bucket.jpg" alt="21 bucket" />
+            <div>
+              <h3>21 bucket</h3>
+              <button onclick="addItem('21 bucket', 30)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/soft twirl.jpg" alt="soft twirl" />
+            <div>
+              <h3>soft twirl</h3>
+              <button onclick="addItem('soft twirl', 5)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item">
+            <img src="images/wrapster.jpg" alt="wrapster" />
+            <div>
+              <h3>wrapster</h3>
+              <button onclick="addItem('wrapster', 1.50)">Add</button>
+            </div>
+          </article>
+          <article class="menu-item" data-preparation-time="5">
+            <img src="images/wiked box.jpg" alt="Wiked Box" />
+            <div>
+              <h3>Wiked box</h3>
+              <button onclick="addItem('Wiked Box', 18)">Add</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="orders-list">
+        <header>
+          <h2>Order List</h2>
+        </header>
+        <div id="orders-list">
+          <div class="order-table">
+            <div class="order-row header">
+              <div class="order-cell">Customer Name</div>
+              <div class="order-cell">Item</div>
+              <div class="order-cell">Completion Time</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
