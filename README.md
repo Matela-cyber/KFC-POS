@@ -1,6 +1,6 @@
 
 
-# KFC Point of Sale (POS) System
+# KFC Point of Sale (POS) System https://matela-cyber.github.io/KFC-POS/
 
 A web-based Point of Sale system tailored for KFC outlets, facilitating efficient order management, billing, and inventory tracking.
 
