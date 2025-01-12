@@ -1,6 +1,4 @@
-Here's a comprehensive README for your "KFC-POS" project:
 
----
 
 # KFC Point of Sale (POS) System
 
