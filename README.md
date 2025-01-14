@@ -56,7 +56,9 @@ A web-based Point of Sale system tailored for KFC outlets, facilitating efficien
    - Open `index.html` in a web browser.
 2. **Manage Orders**:
    - Use the interface to take customer orders, provide price and time estimation.
+# Screen shots
 
+<img src="gkfc.png" alt="POS IMAGE" width="850" height="500">
 ---
 
 ## Project Structure
